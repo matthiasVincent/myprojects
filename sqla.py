@@ -15,13 +15,13 @@ class Student(Base):
 engine = create_engine("mysql+mysqldb://mvs:28908@localhost:3306/mydatabase", echo=True)
 Base.metadata.create_all(engine)
 
-many = [Student(name= "Matthias Sunday", email="sundayOduhmatthias@gmail.com", password="MAth"),
-Student(name= "Anthony Sunday", email="sundayAnt@gmail.com", password="Anto"),
-Student(name= "Apeh Maria", email="apehm@gmail.com", password="Apeh"),
-Student(name= "Okewu Simon", email="simon2@gmail.com", password="simon"),
-Student(name= "Odoh Maria", email="OdohOgbene@gmail.com", password="odoh"),
-Student(name= "Labidi Anthony", email="Tony@gmail.com", password="tony"),
-Student(name= "Labidi James", email="james@gmail.com", password="jammie"),
+many = [Student(name= "Salim Ibrahim", email="ahmadsalim3@gmail.com", password="ZamfSalim"),
+Student(name= "Danlami Musa", email="musa123@gmail.com", password="DanMusa2"),
+Student(name= "Mmenim Udoh Emmanuel", email="udohakwa@gmail.com", password="Abasiayaya"),
+Student(name= "Chidalu Mmesoma", email="mercy5000@gmail.com", password="AnamMercy"),
+Student(name= "Yahuzal Faisal", email="FaisalAllahu@gmail.com", password="NorKad"),
+Student(name= "Zainab Ogunsola", email="zaibaby@gmail.com", password="EkoIkeja"),
+Student(name= "Nosa Allwell", email="nosa435@gmail.com", password="EdoNosaI"),
 ]
 from sqlalchemy.orm import sessionmaker
 Session = sessionmaker(bind=engine)
